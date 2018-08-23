@@ -1,12 +1,11 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0 0;
 }
 
 body{
     font-family: 'Nunito';
-    background-image: url(../imagem/foto-banner.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 .topbar{
@@ -15,11 +14,12 @@ body{
     width: 100%;
     background-color:#a0bed0;
     margin-left: -10px;
+    z-index: 0;
 
 }
 .container{
     width: 100%;
-    margin: -6px -7%;
+    margin: -6px -3%;
 
 }
 
@@ -35,6 +35,8 @@ body{
 .menu__item{
     justify-content: space-between;
     font-family: 'Varela Round', sans-serif;
+   
+
 
     
 }
@@ -47,9 +49,15 @@ body{
 
 .header{
     padding-top: 4%;
+    background-image: url(../imagem/foto-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+
 }
 
-.header__titulo{
+.header__conteudo__titulo{
     text-transform: uppercase;
     text-align: center;
     color:white;
@@ -57,17 +65,18 @@ body{
     font-family: 'Nunito', sans-serif;
     letter-spacing: 17px;
     font-weight: lighter;
+    margin-top: 6%;
 
 
 }
 
-.header__paragrafo{
+.header__conteudo__paragrafo{
 
     font-size: 22px;
     color:rgba(255, 255, 255, .9);
     display: flex;
     justify-content: center;
-    margin-top:-8%;
+    margin-top: 0%;
     width: 44%;
     margin-left: 31%;
     text-align: center;
@@ -82,7 +91,7 @@ body{
  
 
 }
-.botao a{
+.botao__primario{
     text-align:center;
     background-color: #829dad;
     color: white;
@@ -97,20 +106,39 @@ body{
 }
 
 .artigo{
+    background-color: black;
+    height: 330px;
+
+   
+    
+}
+
+.artigo__conteudo{
+    
+    margin: 0 auto;
+    width: 55%;
+}
+
+.artigo__conteudo__titulo{
+    
+    width: 108%;
+    color: white;
     text-align: center;
+    padding: 6%;
+
+    margin-left: -2%;
+
+
+
 }
 
-.artigo__titulo{
-    padding-top: 18%;
+.artigo__conteudo__paragrafo{
 
-}
+    width: 86%;
 
-.artigo__paragrafo{
-
-    width: 45%;
-    margin-left: 30%;
+    margin: 0 auto;
     font-family: 'Nunito';
+    color: white;
+    text-align: center;
 
 }
-
-
