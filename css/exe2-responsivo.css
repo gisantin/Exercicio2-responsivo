@@ -13,13 +13,18 @@ body{
     top: 0;
     width: 100%;
     background-color:#a0bed0;
-    margin-left: -10px;
+    margin: 0 auto;
     z-index: 0;
 
 }
+
+.menu__ham{
+    display:none;
+}
+
 .container{
     width: 100%;
-    margin: -6px -3%;
+    margin: -6px -28%;
 
 }
 
@@ -47,7 +52,7 @@ body{
     text-decoration: none;
 }
 
-.header{
+.section{
     padding-top: 4%;
     background-image: url(../imagem/foto-banner.jpg);
     background-repeat: no-repeat;
@@ -57,20 +62,20 @@ body{
 
 }
 
-.header__conteudo__titulo{
+.section__conteudo__titulo{
     text-transform: uppercase;
     text-align: center;
-    color:white;
+    color: rgba(255, 255, 255, .9)
     font-size:105px;
     font-family: 'Nunito', sans-serif;
     letter-spacing: 17px;
     font-weight: lighter;
     margin-top: 6%;
-
+    
 
 }
 
-.header__conteudo__paragrafo{
+.section__conteudo__paragrafo{
 
     font-size: 22px;
     color:rgba(255, 255, 255, .9);
@@ -106,7 +111,7 @@ body{
 }
 
 .artigo{
-    background-color: black;
+    background-color:rgba(22, 22, 22, .8);
     height: 330px;
 
    
@@ -119,26 +124,134 @@ body{
     width: 55%;
 }
 
-.artigo__conteudo__titulo{
-    
-    width: 108%;
+
+.artigo__conteudo__paragrafo{
+
+    width: 86%;
+    margin: 0 auto;
+    font-family: 'Nunito';
     color: white;
     text-align: center;
-    padding: 6%;
 
-    margin-left: -2%;
+}
 
+@media (max-width:420px){
 
+.topbar{
+    background-color: white;
+    
+}
+.menu__ham{
+    display: block;
+    
+}
+.section__conteudo__titulo{
 
+font-size: 48px;
+letter-spacing: 13px;
+margin-top: 43%;
+}
+    
+
+.section__conteudo__paragrafo{
+    font-size: 18px;
+    width: 84%;
+    margin-left: 7%;   
+    padding-bottom: 50px; 
+}
+.botao__primario{
+      
+    padding: 20px 30px;
+    letter-spacing: 2px;
+    margin-left: -36%;
+}
+
+.artigo__conteudo__titulo{
+    margin: 0 auto;
+    font-size: 29px;
+    color: white;
+    text-align: center;
+    padding-top: 170px;
+}
+.artigo{
+    height: 100vh;
+}
+
+.artigo__conteudo__paragrafo{
+
+    width: 164%;
+    font-family: 'Nunito';
+    color: white;
+    margin-left: -73px;
+    padding-top: 13px;
+    line-height: 27px;
+}
+}
+
+@media (max-width: 960px){
+
+.topbar{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+   
+    margin: 0 auto;
+    z-index: 0;
+}
+.menu__ham{
+    display: block;
+    margin-right: -138px;
+}
+
+.section__conteudo__titulo{
+
+    font-size: 80px;
+    margin-top: 20%;
+    padding: 20px;
+    line-height: 83px;
+    color: rgba(255, 255, 255, .9)
+
+    }
+.section__conteudo__paragrafo{
+    font-size: 18px;
+    width: 35%;
+    margin-left: 32%;
+    padding-bottom: 6px;
+}
+
+.botao__primario{
+  margin-left: -59px;
+}
+
+.artigo{
+    background-color:rgba(22, 22, 22, .8);
+    height: 260px;
 }
 
 .artigo__conteudo__paragrafo{
 
     width: 86%;
-
     margin: 0 auto;
     font-family: 'Nunito';
     color: white;
     text-align: center;
+
+}
+.section{
+    padding-top: 4%;
+    background-image: url(../imagem/foto-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+
+}
+.section__conteudo{
+    height: 100vh;
+}
+
+
+
 
 }
